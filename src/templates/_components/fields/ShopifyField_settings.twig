@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Shopify plugin for Craft CMS
+ *
+ * ShopifyField Field Settings
+ *
+ * @author    Superbig
+ * @copyright Copyright (c) 2018 Superbig
+ * @link      https://superbig.co
+ * @package   Shopify
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("superbig\\shopify\\assetbundles\\shopify\\ShopifyAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

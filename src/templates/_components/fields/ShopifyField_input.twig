@@ -1,0 +1,27 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Shopify plugin for Craft CMS 3.x
+ *
+ * ShopifyField Field Input
+ *
+ * @author    Superbig
+ * @copyright Copyright (c) 2018 Superbig
+ * @link      https://superbig.co
+ * @package   Shopify
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% set fieldOptions = {
+    id: id,
+    class: 'select2 js-select2',
+    name: name,
+    options: options
+} %}
+
+{% set fieldOptions = fieldOptions|merge({ value: value}) %}
+
+{{ forms.selectField(fieldOptions) }}

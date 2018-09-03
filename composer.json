@@ -1,0 +1,41 @@
+{
+    "name": "superbig/craft-shopify",
+    "description": "A toolset to integrate Craft with Shopify",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "shopify"
+    ],
+    "support": {
+        "docs": "https://github.com/superbigco/craft-shopify/blob/master/README.md",
+        "issues": "https://github.com/superbigco/craft-shopify/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Superbig",
+            "homepage": "https://superbig.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "phpclassic/php-shopify": "^1.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+          "superbig\\shopify\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Shopify Plus",
+        "handle": "shopify-plus",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/superbigco/craft-shopify/master/CHANGELOG.md",
+        "class": "superbig\\shopify\\Shopify"
+    }
+}
