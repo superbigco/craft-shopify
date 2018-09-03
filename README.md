@@ -1,4 +1,4 @@
-# Shopify plugin for Craft CMS 3.x
+# Shopify Plus plugin for Craft CMS 3.x
 
 A toolset to integrate Craft with Shopify
 
@@ -18,7 +18,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require superbigco/shopify
+        composer require superbig/craft-shopifyplus
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Shopify.
 
