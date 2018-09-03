@@ -23,7 +23,8 @@
     ],
     "require": {
         "craftcms/cms": "^3.0.0-RC1",
-        "phpclassic/php-shopify": "^1.0.3"
+        "phpclassic/php-shopify": "^1.0.3",
+        "tightenco/collect": "^5.5.20"
     },
     "autoload": {
         "psr-4": {
